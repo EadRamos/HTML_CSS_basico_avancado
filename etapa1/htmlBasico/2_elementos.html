@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos</title>
+</head>
+<body>
+    <div>
+        <h1>Aqui temos um titulo de maior prioridade</h1>
+        <h6>Aqui temos um titulo de menor prioridade</h6>
+        <p>Aqui temos um paragrafo</p>
+
+        <hr>
+
+        <span>serve para estilização sem semantica</span>
+        <p>funciona <span style="color:red">dentro ou</span> fora de um elemento</p>
+        <p>podemos dar <strong>enfase bom negrito</strong> ou <em>enfase com italico</em> todas sendo semanticamente ativas, mas também temos o <b>negrito</b> e <i>italico</i> não semanticos</p>
+
+        <hr>
+
+        <h2>Listas</h2>
+
+        <p>lista sem ordenação</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                </ul>
+            </li>
+            
+        </ul>
+
+        <p>lista ordenada</p>
+        <ol>
+            <li>item 1</li>
+            <li>item 2
+                <ol>
+                    <li>item 2.1</li>
+                </ol>
+            </li>
+            
+        </ol>
+
+        <p>lista de descrição</p>
+        <dl>
+            <dt>titulo 1</dt>
+            <dd>conteudo 1</dd>
+            <dd>conteudo 2</dd>
+            <dt>titulo 2</dt>
+            <dd>conteudo 1</dd>
+            <dd>conteudo 2</dd>
+        </dl>
+        <hr>
+
+        <h2>Podemos criar hiperlink</h2>
+
+        <a href="#">aqui um link para lugar algum</a><br>
+
+        <a href="#" title="vai para lugar algum">aqui um link com descrição</a><br>
+
+        <a href="#idDoElemento">aqui o link que leva para um elemento na pagina</a>
+
+        <div id="idDoElemento">ao clica no ultimo link a pagina rolará ate aqui</div>
+
+        <a href="#" download>não cria uma navegação mas um download</a>
+
+        <p>estudar mais sobre o <b>rel</b> atributo de link em <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel">click aqui</a></p>
+
+        <p>ao clica no link podemos abrir de formas diferentes <a href="#" target="_self">em cima da pagina atual</a>|<a href="#" target="_black">em outra pagina</a>|<a href="#" target="_parent">no pai atual</a>|<a href="#" target="_top">nao entendi kkk</a></p>
+
+        <hr>
+
+        <button type="submit">aciona envio de formulario</button>
+        <button type="reset">apaga tudo no formulario</button>
+        <button type="button">sem ação, podendo especifica script</button>
+        <button disabled="disabled">botao desabilitado</button>
+        <button autofocus>estara selecionado ao entrar na pagina</button>
+
+        <hr>
+
+        <h2>Divisões com semantica</h2>
+
+        <header>
+            <p>nesta tag, você cria um container semantico de cabeçalho</p>
+        </header>
+
+        <nav>
+            <p>geralmente usada para direcionamento, como por exemplo menu que contem link para navegacao</p>
+        </nav>
+
+        <main>
+            <p>indica o container que contem o conteudo principal</p>
+        </main>
+
+        <article>
+            <p>indica um container para conteudo que explica a se mesmo nem necessidade do restante da pagina</p>
+        </article>
+
+        <section>
+            <p>agrupa conteudos de mesmo contexto ou assunto</p>
+            <p>por exemplo aqui tem dois conteudos de explicacao</p>
+        </section>
+
+        <aside>
+            <p>container que indica informações não relacionada diretamente ao conteudo principal, mas um complemento</p>
+        </aside>
+
+        <footer>
+            <p>conteudo de final de pagina, rodape</p>
+        </footer>
+
+        <div>
+            <p>elemento de divisão e agrupamento não semantico</p>
+        </div>
+
+        <hr>
+
+        <p>aqui temos um lugar com detalhes</p>
+        <details>
+            <summary>titulo detalhes</summary>
+            <p>aqui temos o conteudo que vai ser mostrado quando aberto</p>
+        </details>
+
+        <p>detalhe ja aberto</p>
+        <details open="true" name="detalheAberto">
+            <summary>ja aberto</summary>
+            temos o conteudo
+        </details>
+
+        <hr>
+
+        <p>criando modal com a tag dialog</p>
+
+        <dialog>
+            <p>aqui temos o conteudo do dialog</p>
+        </dialog>
+        <dialog open="true">
+            <p>aqui temos o conteudo do dialog</p>
+            <p>podemos utiliza :backdrop no css para estilizar o fundo</p>
+            <p>o dialog tem os metodos showDialog e close para controlar a visualizacao</p>
+        </dialog>
+        
+        <hr>
+
+        <p>podemos criar iframes</p>
+        <ul>
+            frameborder
+            <ul>
+                1
+                0
+            </ul>
+            height
+            width
+            scrolling
+            <ul>
+                auto
+                yes
+                no
+            </ul>
+
+        </ul>
+        <iframe src="https:\\google.com" frameborder="0"></iframe>
+
+        <hr>
+
+        <p>inputs estao aqui <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input"> basta clicar</a></p>
+
+        <hr>
+
+        <p>podemos crair label para itens</p>
+        <label>aqui um input <input type="text" name="texto"></label>
+        <label for="texto">aqui um input id <input type="text" name="text" id="texto"></label>
+        <label accesskey="k">botao para acessar<input type="text"></label>
+
+        <hr>
+
+        <p>explorando tabelas</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>cab 1</th>
+                    <th>cab 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>subCab 1</th>
+                    <td>conteudo</td>
+                </tr>
+                <tr>
+                    <th>subCab 2</th>
+                    <td>conteudo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">ocupa 2 colunas</td>
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>as tags thead, tbody e tfoot não são necessarias</li>
+            <li>tr adiciona uma linha, th e td são um cabecalho e um conteudo</li>
+            <li>border - valor em pixels</li>
+            <li>cellpadding - padding de cada celula</li>
+            <li>cellspacing - margem de cada celula</li>
+        </ul>
+    </div>
+</body>
+</html>

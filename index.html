@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento HTML/CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+        table {
+            width: 40rem;
+            margin: 0 auto;
+            border-radius: 1rem;
+            border-spacing: 0;
+            border: 1px solid gainsboro;
+            padding-bottom: 1rem;
+        }
+        tbody,
+        thead {
+            width: 100%;
+            margin: 0;
+        }
+        th {
+            text-align: start;
+            font-size: 3rem;
+            padding: 1rem;
+            background-color: rgb(208, 57, 168);
+        }
+        td {
+            padding: 1rem;
+        }
+        tr :where(td:last-child, th:last-child) {
+            width: 0;
+        }
+        tbody tr:nth-child(even) {
+            background-color: gainsboro;
+        }
+        a {
+            display: block;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 1rem;
+            color: aliceblue;
+            background-color: rgb(208, 57, 168);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Exercicio</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lembrança elementos</td>
+                <td><a href="./etapa1/htmlBasico/2_elementos.html"><span>ACESSAR</span></a></td>
+            </tr>
+            <tr>
+                <td>Primeiro teste</td>
+                <td><a href="./etapa2/index.html"><span>ACESSAR</span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
